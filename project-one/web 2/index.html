@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mega Bytes Pizza</title>
+<title>MegaBytes Pizza</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -40,7 +40,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mega Bytes Pizza</title>
+<title>MegaBytes Pizza</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -63,6 +63,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
  new WOW().init();
 </script>
+
+<!-- code assault firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<!-- code assault firebase-->
+
 <!-- //animation-effect -->
 <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
@@ -150,8 +155,73 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p>Amazing and Delicious dishes designed for <strong>coders!</strong> Enjoyed by<strong> everyone</strong>!</p>
 				</div>
 			</div>
-			<div class="banner-posit animated wow zoomIn" data-wow-delay=".5s">
-				<h2><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>Oder your pizza here!</h2>
+
+			<!-- code assault html -->
+			<div class="res-form">
+				<div class="row">
+					<div class="col-sm-6">
+						<table class="res-table">
+							<thead>
+								<tr>
+									<th scope="col">Party Name     |</th>
+									<th scope="col">Size of Party    | </th>
+									<th scope="col">Reservation Time</th>
+								</tr>
+							</thead>
+			
+							<tbody id = "new-res">
+								<tr>
+									<td>Michael</td>
+									<td>8</td>
+									<td>5:00pm</td>
+								</tr>
+								<tr>
+									<td>Muhammad</td>
+									<td>4</td>
+									<td>5:30pm</td>
+								</tr>
+								<tr>
+									<td>Vivek</td>
+									<td>6</td>
+									<td>6:00pm</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	
+				  <div class="panel-secondary">
+						<div class="col-sm-6">
+							<div class="panel-heading">
+								<h3 class="panel-titleTwo"><strong>Make Your Reservation Now!</strong></h3>
+							</div>
+							<div class="panel-body">
+								<form>
+									<div class="form-group">
+										<label for="InputPartyName">Party Name</label>
+										<br>
+										<input type="partyName" id="InputPartyName" aria-described by="partyNameHelp">
+									</div>
+									<div class="form-group">
+											<label for="InputPartySize">Size of Party</label>
+											<br>
+											<input type="partySize" id="InputPartySize" aria-described by="partySizeHelp">
+									</div>
+									<div class="form-group">
+											<label for="InputResTime">Reservation Time</label>
+											<br>
+											<input type="resTime" id="InputResTime" aria-described by="resTimeHelp">
+									</div>
+			
+									<button type="submit" class="btn btn-primary" id="addResBtn">Submit Reservation Now!</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		  
+					  <!-- code assault html -->
+			<!-- <div class="banner-posit animated wow zoomIn" data-wow-delay=".5s">
+				<h2><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>Order your pizza here!</h2>
 				<div class="reservation">
 					 <h5>Date</h5>
 					<div class="book_date">
@@ -160,18 +230,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<input class="date" id="datepicker" type="text" value="26/03/2018" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '26/03/2018';}" required="">
 						 </form>
 					</div>
-					 <h5>Dinner</h5>
-					 <!----------start section_room----------->
-					 <div class="section_room">
+					 <h5>Dinner</h5> -->
+					 <!-- --------start section_room--------- -->
+					 <!-- <div class="section_room">
 						 <select id="country" onchange="change_country(this.value)" class="frm-field required">
 								<span class="glyphicon glyphicon-user" aria-hidden="true"></span><option value="null">Dinner</option>
 								<option value="null">Breakfast</option>
 								<option value="AX">Lunch</option>
 						</select>
 					 </div>
-					 <h5>Guests</h5>
-					 <!----------start section_room----------->
-					 <div class="section_room">
+					 <h5>Guests</h5> -->
+					 <!-- --------start section_room--------- -->
+					 <!-- <div class="section_room">
 						  <select id="country" onchange="change_country(this.value)" class="frm-field required sect">
 								<option value="null">1</option>
 								<option value="null">2</option>
@@ -185,9 +255,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
 							<input type="submit" value="Make Your Booking">
 						</form>
-					</div>
-				</div>
-			</div>
+					</div> -->
 		</div>
 	</div>
 
