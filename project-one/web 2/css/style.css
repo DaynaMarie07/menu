@@ -26,6 +26,7 @@ ul,label{
 body a:hover{
 	text-decoration:none;
 }
+
 /*-- header-top --*/
 .header-top{
 	background:#1A1A1A;
@@ -2557,6 +2558,7 @@ p.aut,.history-right p{
 	}
 }
 
+<<<<<<< HEAD
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -2594,3 +2596,25 @@ p.aut,.history-right p{
     text-decoration: none;
     cursor: pointer;
 }
+=======
+/* code assault css */
+.panel-secondary {
+    margin-left: 50px;
+}
+
+.res-table {
+    margin-left: 50px;
+}
+
+.res-form {
+	width: 85%;
+	margin: 20px 50px 50px 100px;
+	background-color: #EEEEEE;
+}
+
+#new-res {
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+/* code assault css */
+>>>>>>> c523ae0d2a5ed806dc26e9e139e364d7496b07db
